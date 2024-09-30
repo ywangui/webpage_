@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Company X</h1>
+    </header>
+
+    <section>
+        <p>We are excited to have you here! Enter your name below to receive a personalized greeting.</p>
+        
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button id="greetButton">Greet Me</button>
+        
+        <div id="greetingDisplay"></div>
+    </section>
+
+    <section>
+        <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+            <label for="firstName">First Name:</label><br>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label><br>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+            <button type="submit">Submit</button>
+            <button type="button" id="cancelButton">Cancel</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+              </html>
